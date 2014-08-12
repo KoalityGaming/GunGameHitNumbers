@@ -1,0 +1,18 @@
+"AddonInfo"
+{
+	"name" "Hit Numbers"
+	"author_name" "author"
+	"info" "Adds damage indicators whenever you hurt something.
+
+Players may use the client console command "hitnums_enable 0/1" to show or hide (respectively) the numbers in-game.
+To go back to 2D text mode, clients may use the command "hitnums_3dtext"
+
+For server admins, use "sv_hitnums_show 0/1" to disable/enable this addon server-wide.
+Use "sv_hitnums_showalldamage 0/1" to show damage indicators for all players.
+
+This addon is Serverside & Clientside.
+
+*** AS OF DECEMBER 06 ***
+The console command "ief_toggle_hitnums" was changed to "hitnums_enable 0/1"
+These command names are final, and will no longer be changed."
+}
