@@ -33,7 +33,7 @@ function EntDamage(target, dmginfo)
 				net.WriteUInt(dmginfo:GetDamageType(), 32)
 				
 				-- Is it a critical hit? (for players and npcs only)
-				net.WriteBit( (dmginfo:GetDamage() >= target:GetMaxHealth())
+				net.WriteBit( (dmginfo:GetDamage() >= target:Health())
 							and (target:IsPlayer() or target:IsNPC()) )
 				
 				-- Get damage position
