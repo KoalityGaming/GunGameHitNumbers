@@ -19,6 +19,8 @@ function EntDamage(target, dmginfo)
 	if not on then return end
 	
 	local attacker = dmginfo:GetAttacker()
+	if attacker:Team() == target:Team() then return end
+	
 	if target:IsValid() and (attacker:IsValid() or showAll) then
 		
 		if (showAll or attacker:IsPlayer()) and target:Health()>0
